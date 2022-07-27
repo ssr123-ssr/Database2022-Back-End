@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IEnumerable<Client>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>姓名</th>
+            <th>电话号码</th>
+        </tr>
+
+
+
+        @foreach (var client in Model)
+        {
+
+
+            <tr>
+                <td>@client.ID &nbsp</td>
+                <td>@client.NAME &nbsp</td>
+                <td>@client.PHONE_NUMBER &nbsp</td>
+            </tr>
+
+        }
+
+    </table>
+
+
+</div>
