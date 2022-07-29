@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@model IEnumerable<Package>
+
+<h1>Index</h1>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>姓名</th>
+            <th>电话号码</th>
+        </tr>
+
+
+
+        @foreach (var package in Model)
+        {
+            <tr>
+                <td>@package.STATE &nbsp</td>
+                <td>@package.PACK_ID &nbsp</td>
+                <td>@package.RECIPIENT_ID &nbsp</td>
+            </tr>
+}
+
+    </table>
+
+
+</div>
+
