@@ -31,7 +31,7 @@ namespace ExpressSystem.Controllers
         public IActionResult Index()
         {
             IEnumerable<User> users = _userRepository.GerAllUsers();
-            return View(users);            
+            return View(users);
         }
 
 
@@ -41,7 +41,7 @@ namespace ExpressSystem.Controllers
         {
             AccountViewModel accountViewModel = new AccountViewModel()
             {
-                registerStatus=status
+                registerStatus = status
             };
 
             return View(accountViewModel);
@@ -57,7 +57,7 @@ namespace ExpressSystem.Controllers
             {
                 if (user.PASSWORD == cur_user.PASSWORD)
                 {
-                    return RedirectToAction("privacy","home");   //这里应该返回登录的角色的界面
+                    return RedirectToAction("privacy", "home");   //这里应该返回登录的角色的界面
 
                     //if (cur_user.ROLE == "用户")
                     //    return View("Client", new { id = cur_user.ID });
@@ -79,12 +79,16 @@ namespace ExpressSystem.Controllers
             {
                 registerStatus = loginFail
             };
-       
+
             return View(accountViewModel);
         }
 
         #endregion
 
+        //[HttpGet("Client/expressInfoFill")]
+
+
+        //[HttpPost("Client/expressInfoFill")]
 
         #region  注册
         [HttpGet]

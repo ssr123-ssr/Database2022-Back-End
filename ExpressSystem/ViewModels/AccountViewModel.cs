@@ -11,6 +11,5 @@ namespace ExpressSystem.ViewModels
         public User user { get; set; }
 
         public int registerStatus { get; set; }
-
     }
 }
