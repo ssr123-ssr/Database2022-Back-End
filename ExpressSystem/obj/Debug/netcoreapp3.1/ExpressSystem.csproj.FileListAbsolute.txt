@@ -178,3 +178,4 @@ E:\软件工程\大二下\数据库原理与应用\暑假课设\Application\Expr
 E:\软件工程\大二下\数据库原理与应用\暑假课设\Application\ExpressSystem\obj\Debug\netcoreapp3.1\ExpressSystem.dll
 E:\软件工程\大二下\数据库原理与应用\暑假课设\Application\ExpressSystem\obj\Debug\netcoreapp3.1\ExpressSystem.pdb
 E:\软件工程\大二下\数据库原理与应用\暑假课设\Application\ExpressSystem\obj\Debug\netcoreapp3.1\ExpressSystem.genruntimeconfig.cache
+E:\软件工程\大二下\数据库原理与应用\暑假课设\Application\ExpressSystem\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
